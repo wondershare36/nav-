@@ -9,12 +9,16 @@
 }
 a{color:inherit;text-decoration: none;}
 /* style */
+*{
+  transition: all 1s;
+}
 body{
   background-color: #eee;
 }
 ul,ol{list-style: none;}
 .globalHeader{
-
+  display: flex;
+  justify-content: center;
 }
 .formContainer{
   margin: 20px;
@@ -42,6 +46,7 @@ ul,ol{list-style: none;}
 .siteList{
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .siteList >li{
@@ -49,8 +54,9 @@ ul,ol{list-style: none;}
   margin-top: 20px;
 }
 .siteList .site{
+  position: relative;
   width: 160px;
-  height: 140px;
+  height: 160px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -64,14 +70,49 @@ ul,ol{list-style: none;}
   display: flex;
   justify-content: center;
   align-items: center;
+  text-transform: uppercase;
 }
 .siteList .site>.link{
-  font-size: 14px;
+  font-size: 14px; 
   margin-top: 4px;
+}
+.siteList .site>.close{
+  font-size: 30px;
+  position: absolute;
+  right: 0px;
+  top: 0;
+  padding: 0 15px;
+  opacity: 0;
+}
+.siteList .site:hover>.close{
+  opacity: 1;
 }
 .siteList .addButton{
   
 }
 .siteList .addButton img{
   width: 100%;
+}
+@media screen and (min-width:500px){
+  .formContainer{
+    min-width: 400px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .globalHeader{
+    margin-top: 100px;
+  }
+  .siteList{
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width:500px){
+  .formContainer{
+   width: 100%;
+  }
+  .siteList{
+    margin-left: 0;
+    margin-right: 0;
+    justify-content: start;
+  }
 }
