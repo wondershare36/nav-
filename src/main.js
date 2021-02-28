@@ -3,7 +3,7 @@ const $lastLi = $siteList.find('li.last')
 const $li = $siteList.find('li')
 const x = localStorage.getItem("x")
 const xObject = JSON.parse(x)
-const hasMap =xObject.length!==0?xObject:[
+const hasMap =xObject&&xObject.length!==0?xObject:[
   { logo: 'A', url: 'https://www.acfun.cn' },
   { logo: 'B', url: 'https://www.bilibili.com' },
   { logo: 'D', url: 'http://www.dasabi99.top' },
