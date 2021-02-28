@@ -17,6 +17,8 @@ body{
   background-image: url("http://static.simpledesktops.com/uploads/desktops/2020/09/15/Day_at_Camp.png");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgb(60,77,93);
 }
 ul,ol{list-style: none;}
 .globalHeader{
@@ -117,9 +119,12 @@ ul,ol{list-style: none;}
   .formContainer{
    width: 100%;
   }
+  .globalMain{
+    display: flex;
+    justify-content: center;
+  }
   .siteList{
-    margin-left: 0;
-    margin-right: 0;
+    width: 400px;
     justify-content: start;
   }
 }
