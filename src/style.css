@@ -14,6 +14,9 @@ a{color:inherit;text-decoration: none;}
 }
 body{
   background-color: #eee;
+  background-image: url("http://static.simpledesktops.com/uploads/desktops/2020/09/15/Day_at_Camp.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 ul,ol{list-style: none;}
 .globalHeader{
@@ -62,6 +65,10 @@ ul,ol{list-style: none;}
   justify-content: center;
   align-items: center;
   background-color: #fff;
+  border-radius: 5px;
+}
+.site:hover{
+  background-color: #ccc;
 }
 .siteList .site>.logo{
   width: 64px;
@@ -74,7 +81,7 @@ ul,ol{list-style: none;}
 }
 .siteList .site>.link{
   font-size: 14px; 
-  margin-top: 4px;
+  margin-top: 10px;
 }
 .siteList .site>.close{
   font-size: 30px;
